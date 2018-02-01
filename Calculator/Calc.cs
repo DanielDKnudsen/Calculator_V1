@@ -27,5 +27,15 @@ namespace Calculator
         {
             return Math.Pow(x, exp);
         }
+
+        public double Divide(double dividend, double dividor)
+        {
+            if (dividor == 0)
+            {
+                throw new DivideByZeroException();
+            }
+            var result = dividend / dividor;
+            return result;
+        }
     }
 }

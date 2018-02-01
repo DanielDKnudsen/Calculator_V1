@@ -28,7 +28,7 @@ namespace CalculatorTest
         {
             Assert.That(_uut.Add(a, b), Is.EqualTo(c));
         }
-        // det her er en kommentar for at se om det virker
+        
         [TestCase(2, 2, 0)]
         [TestCase(-2, 2, -4)]
         [TestCase(2, -2, 4)]
@@ -54,6 +54,15 @@ namespace CalculatorTest
         public void PowerTest(double a, double b, double c)
         {
             Assert.That(_uut.Power(a, b), Is.EqualTo(c));
+        }
+
+        [TestCase(5, 0)]
+        public void DivideTest(double dividend, double dividor)
+        {
+            //var ex = Assert.Throws<DivideByZeroException>(() => _uut.Divide(dividend, dividor));
+            //Assert.That(ex, Is.EqualTo(typeof(DivideByZeroException)));
+
+            Assert.Throws(typeof(DivideByZeroException), () => _uut.Divide(dividend, dividor));
         }
     }
 }
