@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccumulatorTests.cs" />
+    <Compile Include="ClearTest.cs" />
     <Compile Include="TestCalc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

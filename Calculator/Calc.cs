@@ -37,5 +37,10 @@ namespace Calculator
             Accumulator = result;
             return result;
         }
+
+        public void Clear()
+        {
+            Accumulator = 0;
+        }
     }
 }
