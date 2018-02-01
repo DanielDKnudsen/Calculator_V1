@@ -28,7 +28,7 @@ namespace CalculatorTest
         {
             Assert.That(_uut.Add(a, b), Is.EqualTo(c));
         }
-
+        // det her er en kommentar for at se om det virker
         [TestCase(2, 2, 0)]
         [TestCase(-2, 2, -4)]
         [TestCase(2, -2, 4)]
