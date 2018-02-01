@@ -23,7 +23,7 @@ namespace CalculatorTest
         [TestCase(0, 0, 0)]
         [TestCase(-4, -5, 0)]
         [TestCase(-2, 4, 0)]
-        public void Add_AccumulatorEqualsResult(double a, double b, double expectedResult)
+        public void ClearAdd_AccumulatorEqualsZero(double a, double b, double expectedResult)
         {
             _uut.Add(a, b);
             _uut.Clear();
@@ -35,7 +35,7 @@ namespace CalculatorTest
         [TestCase(4, -2, 0)]
         [TestCase(-2, -4, 0)]
         [TestCase(4, -3, 0)]
-        public void Subtract_AccumulatorEqualsResult(double a, double b, double expectedResult)
+        public void ClearSubtract_AccumulatorEqualsZero(double a, double b, double expectedResult)
         {
             _uut.Subtract(a, b);
             _uut.Clear();
@@ -47,7 +47,7 @@ namespace CalculatorTest
         [TestCase(-5, 2, 0)]
         [TestCase(-9, 2, 0)]
         [TestCase(100, 1, 0)]
-        public void Power_AccumulatorEqualsResult(double a, double b, double expectedResult)
+        public void ClearPower_AccumulatorEqualsZero(double a, double b, double expectedResult)
         {
             _uut.Power(a, b);
             _uut.Clear();
@@ -58,7 +58,7 @@ namespace CalculatorTest
         [TestCase(-6, 12, 0)]
         [TestCase(-8, -5, 0)]
         [TestCase(24, 9, 0)]
-        public void Multiply_AccumulatorEqualsResult(double a, double b, double expectedResult)
+        public void ClearMultiply_AccumulatorEqualsZero(double a, double b, double expectedResult)
         {
             _uut.Multiply(a, b);
             _uut.Clear();
