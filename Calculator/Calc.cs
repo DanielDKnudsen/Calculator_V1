@@ -47,5 +47,10 @@ namespace Calculator
             var result = dividend / dividor;
             return result;
         }
+
+        public void Clear()
+        {
+            Accumulator = 0;
+        }
     }
 }
