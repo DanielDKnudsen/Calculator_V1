@@ -48,7 +48,7 @@ namespace CalculatorTest
         }
 
         [TestCase(2, 2, 4)]
-        [TestCase(-2, 2, 4)]
+        [TestCase(-2, 3, -8)]
         [TestCase(2, -2, 0.25)]
         [TestCase(-2, -2, 0.25)]
         public void PowerTest(double a, double b, double c)
