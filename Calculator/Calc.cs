@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
+    //Test to see if it builds correctly on changes to master branch
     public class Calc
     {
         public double Accumulator { get; private set; }
