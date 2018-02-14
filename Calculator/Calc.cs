@@ -40,7 +40,9 @@ namespace Calculator
 
         public double Divide(double dividend, double dividor)
         {
-            if (dividor == 0)
+            //As we are dealing with doubles, we have to manually check and throw the exception, as it is only
+            //thrown automatically by dividing by int zero
+            if (dividor.Equals(0))
             {
                 throw new DivideByZeroException();
             }
